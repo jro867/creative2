@@ -1,57 +1,178 @@
-/* Space out content a bit */
-body {
-  background-color:gray !important;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-div.container{
-  background-color:white;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
 
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+#main-app-body{
+  width:700px !important;
+  height:860px !important;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#job-body{
+  width:699px !important;
+  height:858px !important;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#display-area{
+  width:647px !important;
+  height:828px !important;
+  background-color: white;
+  border-radius: 20px;
+  margin-left:25px;
+  border: 1px solid black;
+}
+
+.nav-bumble-container{
+  width:inherit;
+}
+
+nav.job-bumble-menu{
+  /*width:400px !important;*/
+  background-color: #efb421;
+}
+
+button.message-button{
+  width:45px;
+  height:45px;
+  float: right;
+  display: block;
+  border-color: #333;
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 3px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: url("images/mail.png");
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+#user-pic{
+  width:150px;
+  height:150px;
+  margin-top:30px;
+  margin-left: 80px; 
+}
+
+#message-menu-holder{
+  background-color: #efb421;
+  height:50px;
+}
+div.navbar-header{
+   background-color: #efb421 !important;
+}
+
+#right-menu{
+    padding-right:0px; 
+    padding-left:0px;
+}
+#navbar, .navbar-inverse{
+  border-color:#efb421 !important;
+}
+/*Makes the navegation to display as hamburget all the time*/
+ .navbar-header {
+        float: none;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+  .navbar-toggle {
+    float: left;
+    display: block;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   }
-}
+  .navbar-collapse.collapse {
+      display: none!important;
+      height:808px !important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
+  .navbar-collapse.collapse.in {
+      display: block !important; 
   }
-}
+
+  @media (max-width: 1200px) { 
+    .col-lg-6{
+      width:50% !important;
+      float:left;
+  }
+  
+   @media (max-width: 700px) { 
+     #main-app-body{
+      width:500px !important;
+      height:750px !important;
+     }
+     #job-body{
+      width:500px !important;
+      height:748px !important;
+     }
+     #display-area{
+        width:448px !important;
+        height:718px !important;
+        /*margin-left: 0px;*/
+      }
+    .navbar-collapse.collapse {
+      height:748px !important;
+      }
+
+      #user-pic{
+        float:right;
+        margin-top:80px;
+        margin-right: 10px; 
+        }
+    }
+
+  @media (max-width: 500px) { 
+     #main-app-body{
+      width:400px !important;
+      height:670px !important;
+     }
+     #job-body{
+      width:400px !important;
+      height:668px !important;
+     }
+
+     #display-area{
+        width:385px !important;
+        height:658px !important;
+        margin-left:7px;
+      }
+    .navbar-collapse.collapse {
+      height:668px !important;
+      }
+  }  
+
+   @media (max-width: 400px) { 
+     #main-app-body{
+      width:320px !important;
+      height:520px !important;
+     }
+     #job-body{
+      width:320px !important;
+      height:518px !important;
+     }
+     #display-area{
+        width:308px !important;
+        height:508px !important;
+        margin-left: 5px;
+      }
+    .navbar-collapse.collapse {
+      height:518px !important;
+      }
+
+
+  }
