@@ -64,7 +64,7 @@ div.navbar-header{
 
 #message-menu-holder{
   background-color: #efb421;
-  height:50px;
+  height:51px;
 }
 
 #right-menu{
@@ -110,16 +110,22 @@ button.search-button{
   overflow: visible;
 }
 
+ .form-control {
+   display:inline;
+   width:250px;
+  }
 
 /*====================Main Area ==============*/
 
   #search-container{
-    width:699px;
+     width: 660px;
     height:458px;
     margin-top:50px;
     background-color:gray;
     z-index:10;
     position:absolute;
+    margin-left: 20px;
+    border-radius: 0px 0px 15px 15px;
   }
 
   #job-body{
@@ -159,7 +165,8 @@ button.search-button{
   }
 
   #main-info{
-    background-color:#ff6699;
+    /*background-color:#ff6699;*/
+    background-color: #ffffe6;
     height:420px;
   }
   #selector-holder{

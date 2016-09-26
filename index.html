@@ -12,12 +12,12 @@
   </head>
   
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <body>
+  <body ng-app="jobBumble" ng-controller="searchController">
 
 
 
       <div id="main-app-body" class="container">
-           <!-- Navegation-->
+        <!-- Navegation-->
         <div id="right-menu" class="navbar-wrapper col-lg-6">
           <div class"container nav-bumble-container">
 
@@ -52,11 +52,11 @@
 
         <!-- Search container, it expands at click, DEFAULR -->
         <div id="search-container">
-          <div ng-app="Search" ng-controller="searchController">
+          <div id="search-fields">
             <h2>Search</h2>
             <form ng-submit="searchCareers()">
-              <input type="text" ng-model="jobQuery" size="25" placeholder="Job Search">
-              <select ng-model="state">
+              <input type="text" ng-model="jobQuery" class="form-control" size="25" placeholder="Job Search">
+              <select ng-model="state" class="selectpicker">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -109,14 +109,17 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
               </select>
+              <br/>
               <input type="submit" value="Find Your Match">
             </form>
             <div ng-repeat="x in jobList">
-              <span ng-bind="x.jobText"</span>
+              <span ng-bind="x.jobText"></span>
             </div>
-          </div>
 
-        </div><!--END of search -->
+          </div><!--end of search-fields-->
+        </div><!--END of search--> 
+
+        <!-- Display info area -->
         <div id="job-body">
           <div id="display-area">
             <div id="main-job-area">
@@ -140,38 +143,9 @@
               <div id="jdescriptiond"></div>
             </div>
           </div>
-        </div>
+        </div><!--end of display info area -->         
 
-
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--   <div class="row">
-          <div id="job-holder" class="col-lg-12" ng-app="jobBumble" ng-controller="">
-
-            
-          </div>
-        </div> -->
-
-      </div>
-
-    <script>    
-
-    </script>
-
-   
+      </div><!--END OF main-app-body-->   
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
