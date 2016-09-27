@@ -76,33 +76,33 @@
                <!--  
                 <p id="salary">100,000</p>
                 <p id="location">Provo</p> -->
-                  <div ng-repeat="x in jobs">
+                  <div ng-repeat="x in jobs track by $index">
 
-                    <h4 id="job-title">Position: {{x.title}}</h4>
-                     <p id="salary">Salary: {{x.range}}</p>
-                     <p id="location">Location: {{x.location}}</p>
+                    <h4 id="job-title" ng-show="$index === curPosInArray">Position: {{x.title}}</h4>
+                     <p id="salary" ng-show="$index === curPosInArray">Salary: {{x.range}}</p>
+                     <p id="location" ng-show="$index === curPosInArray">Location: {{x.location}}</p>
                      <!-- <p id="location">{{job.location}}</p>                     -->
                   </div>
                 <!-- </carousel>   -->
               </div>
               <div id="selector-holder">
                 <div id="accept">
-                  <a href=""><img class="action-button" src="images/yes.png"/></a>
+                  <a href="" ng-click="itemNext()"><img class="action-button" src="images/yes.png"/></a>
                 </div>
                 <div id="reject">
-                  <a href="" ng-click="itemNext(jobs.length)"><img class="action-button" src="images/no.png"/></a>
+                  <a href="" ng-click="itemNext()"><img class="action-button" src="images/no.png"/></a>
                 </div>
               </div>
 
             </div>
             <div id="job-description">
               <h3 id="jtitled">Info</h3>
-              <div id="jdescriptiond" ng-repeat="x in jobs">
+              <div id="jdescriptiond" ng-repeat="x in jobs track by $index">
                 
-                  <p id="salary">Company Name: {{x.name}}</p>
-                  <p id="location">Start Date: {{x.start_date}}</p>
-                  <p id="location">End Date: {{x.end_date}}</p>
-                  <p id="location">URL: {{x.url}}</p>
+                  <p id="salary" ng-show="$index === curPosInArray">Company Name: {{x.name}}}</p>
+                  <p id="location" ng-show="$index === curPosInArray">Start Date: {{x.start_date}}</p>
+                  <p id="location" ng-show="$index === curPosInArray">End Date: {{x.end_date}}</p>
+                  <p id="location" ng-show="$index === curPosInArray">URL: {{x.url}}</p>
 
 
               </div>

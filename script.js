@@ -64,7 +64,6 @@ app.controller('searchController',function($scope, jobService){
 				];
 
 	console.log("I need help father");
-	$scope.itemNext = function(value){console.log("lookinh for this one " + value);}
 
 	// $scope.jobs = [];
 
