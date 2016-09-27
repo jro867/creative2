@@ -57,7 +57,7 @@ app.controller('searchController',function($scope, jobService){
      "Wyoming":"WY"
 	};
 
-	$scope.jobs = [{ "end_date":"2016-10-03", "id": "northcarolina:1380899", "location" : "Drapper, UT", 
+	$scope.jobs = [{ "end_date":"2016-10-03", "id": "northcarolina:1380899", "location" : "Draper, UT", 
 					"range" : "$"+65000 + "-" + "$"+90000, "name": "Proofpoint",
 					 "title" :"Infrastructure Software engineer", "rate_interval_code" : "UT", "start_date":"2016-09-26", 
 					 "url" :"http://Proofpoint.com"}	
