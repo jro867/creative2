@@ -62,6 +62,27 @@ div.navbar-header{
   margin-left: 80px; 
 }
 
+#user-photo{
+  padding-left:30px;
+  margin-top:30px;
+}
+
+#location-pic {
+  width:25%;
+  height:auto;
+  padding-left:20px;
+}
+
+#info-pic{
+  width:20%;
+  height:auto;
+  padding-left:20px;
+}
+
+#location #desc{
+  padding-left:10px;
+}
+
 #message-menu-holder{
   background-color: #efb421;
   height:51px;
@@ -108,11 +129,6 @@ button.search-button{
   border: 1px solid transparent;
   border-radius: 4px;
   overflow: visible;
-}
-
-#submit-search{
-   background-image: url("images/search_icon.png");
-  background-repeat: no-repeat;
 }
 
  .form-control {
