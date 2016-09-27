@@ -145,6 +145,7 @@ button.search-button{
     background-color:gray;
     z-index:10;
     position:absolute;
+    display: none;
     margin-left: 20px;
     border-radius: 0px 0px 15px 15px;
   }
