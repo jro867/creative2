@@ -110,6 +110,11 @@ button.search-button{
   overflow: visible;
 }
 
+#submit-search{
+   background-image: url("images/search_icon.png");
+  background-repeat: no-repeat;
+}
+
  .form-control {
    display:inline;
    width:250px;

@@ -12,7 +12,7 @@
   </head>
   
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <body ng-app="jobBumble" ng-controller="searchController">
+  <body>
 
 
 
@@ -52,7 +52,7 @@
 
         <!-- Search container, it expands at click, DEFAULR -->
         <div id="search-container">
-          <div id="search-fields">
+          <div id="search-fields"  ng-app="jobBumble" ng-controller="searchController">
             <h2>Search</h2>
             <form ng-submit="searchCareers()">
               <input type="text" ng-model="jobQuery" class="form-control" size="25" placeholder="Job Search">
@@ -110,11 +110,11 @@
                 <option value="WY">Wyoming</option>
               </select>
               <br/>
-              <input type="submit" value="Find Your Match">
+              <input id="submit-search" type="submit" value="">
             </form>
-            <div ng-repeat="x in jobList">
+           <!--  <div ng-repeat="x in jobList">
               <span ng-bind="x.jobText"></span>
-            </div>
+            </div> -->
 
           </div><!--end of search-fields-->
         </div><!--END of search--> 
