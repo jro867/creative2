@@ -63,8 +63,16 @@ app.controller('searchController',function($scope, jobService){
 					 "url" :"http://Proofpoint.com"}	
 				];
 
-	console.log("I need help father");
+	 $scope.curPosInArray = 0;
 
+	$scope.itemNext = function(){
+		console.log("lookinh for this one ");
+		$scope.curPosInArray++;
+	}
+
+	if($scope.curPosInArray > $scope.jobs.length){
+		$scope.curPosInArray = 0;
+	}
 	// $scope.jobs = [];
 
 	    // function somewhere in father-controller.js

@@ -55,11 +55,12 @@
           <div id="search-fields">
             <h2>Search Jobs {{ stateSelected}}</h2>
             <form ng-submit="searchCareers()">
-              <input type="text" ng-model="jobQuery" class="form-control" size="25" placeholder="Job Search">
+              <input type="text" ng-model="jobQuery" class="form-control" size="25" placeholder="Job Search"/>
 
               <select ng-model="stateSelected" ng-options="x for (x, y) in states" ></select>
               <br/>
-              <input id="submit-search" type="submit" value="">
+              <input id="submit-search" type="submit" value="Submit" />
+
             </form>
            <!--  <div ng-repeat="x in jobList">
               <span ng-bind="x.jobText"></span>
