@@ -206,6 +206,17 @@ button.search-button{
 
   #top-job-info{
     height: 400px;
+    width: 600px;
+    position: absolute;
+    /* height: 200px; */
+    margin-top: 50px;
+  }
+
+  #bumble-search-image{
+    width:200px;
+    height:150px;
+    margin-right: 100px;
+    float: right;
   }
 
   #job-title{
@@ -218,6 +229,11 @@ button.search-button{
     font-weight: bold;
     padding-left: 30px;
     font-size: 24px;
+  }
+
+  #submit-search{
+    margin-left: 50px;
+    margin-top: 15px;
   }
 
   #salary{
@@ -247,9 +263,15 @@ button.search-button{
   #selector-holder{
     background-color:#ffcc00;
   }
+
+/*  .stay-underneath{
+    position:absolute;
+  }*/
+
   #accept{
     float:left;
     margin-left:50px;
+    position:absolute;
   } 
   #reject{
     float:right;

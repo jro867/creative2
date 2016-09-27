@@ -60,7 +60,8 @@
 
                 <select ng-model="stateSelected" ng-options="x for (x, y) in states" ></select>
                 <br/>
-                <input id="submit-search" type="submit" value="Submit" />
+                <input id="submit-search" class="btn-primary" type="submit" value="Submit" />
+                <img id="bumble-search-image"src="images/bumble.png"/>
 
               </form>
             </div><!--end of search-fields-->
@@ -98,10 +99,10 @@
               <h3 id="jtitled">Info:</h3>
               <div id="jdescriptiond" ng-repeat="x in jobs track by $index">
                 
-                  <p id="company-name" class="other-job-info" ng-show="$index === curPosInArray">Company Name: <strong>{{x.name}}</strong></p>
-                  <p id="start-date" class="other-job-info" ng-show="$index === curPosInArray">Start Date: <strong>{{x.start_date}}</strong></p>
-                  <p id="end-date" class="other-job-info" ng-show="$index === curPosInArray">End Date: <strong>{{x.end_date}}</strong></p>
-                  <p id="job-url" class="other-job-info" ng-show="$index === curPosInArray">URL: <strong>{{x.url}}</strong></p>
+                  <p id="company-name" class="other-job-info stay-underneath" ng-show="$index === curPosInArray">Company Name: <strong>{{x.name}}</strong></p>
+                  <p id="start-date" class="other-job-info stay-underneath" ng-show="$index === curPosInArray">Start Date: <strong>{{x.start_date}}</strong></p>
+                  <p id="end-date" class="other-job-info stay-underneath" ng-show="$index === curPosInArray">End Date: <strong>{{x.end_date}}</strong></p>
+                  <p id="job-url" class="other-job-info stay-underneath" ng-show="$index === curPosInArray">URL: <strong>{{x.url}}</strong></p>
 
 
               </div>
