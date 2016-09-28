@@ -78,7 +78,7 @@ app.controller('searchController',function($scope, jobService){
 	    // function somewhere in father-controller.js
     $scope.searchCareers = function(){
 
-    	$scope.jobs = [];
+    	// $scope.jobs = [];
         
         var url = "https://api.usa.gov/jobs/search.json?query=";
         var queryString = $scope.jobQuery;
@@ -91,8 +91,9 @@ app.controller('searchController',function($scope, jobService){
             .then(function(data) {
                 // promise fulfilled
                 if (data != undefined) {
+                	$scope.jobs = [];
                 	$.each(data, function(i,item){
-		              console.log(data[i]);
+		              console.log("let see...", data[i]);
 
 		               $scope.jobs.push({
 					        range : "$"+data[i].minimum + " - " + "$"+data[i].maximum,
@@ -105,9 +106,13 @@ app.controller('searchController',function($scope, jobService){
 
 	    				});
 			      	});
+			      	//sets the index to the begining to the new array
+			      	$scope.curPosInArray = 0;
+			      	$scope.$digest();
                 } else {
                     console.log("data was null");
                 }
+
             }, function(error) {
                 console.log("Someone does not kept its promise");
             });
