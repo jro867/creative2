@@ -93,7 +93,7 @@ app.controller('searchController',function($scope, jobService){
                 if (data != undefined) {
                 	$scope.jobs = [];
                 	$.each(data, function(i,item){
-		              console.log("let see...", data[i]);
+		              console.log(data[i]);
 
 		               $scope.jobs.push({
 					        range : "$"+data[i].minimum + " - " + "$"+data[i].maximum,
@@ -162,6 +162,14 @@ $(document).ready(function(){
 
 	  });
   });
+
+ $("#submit-search").click(function(){
+	  $("#search-container").toggle("fast", function(){
+
+	  });
+  });
+
+
 });
 
 

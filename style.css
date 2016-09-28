@@ -49,6 +49,17 @@ body{
     background-color: #efb421;
   }
 
+  nav.job-bumble-menu li a{
+    font-size: 20px;
+    margin-left: 35px;
+  }
+
+#navbar{
+  height: 550px !important;
+}
+
+
+
 #navbar, .navbar-inverse{
   border-color:#efb421 !important;
 }
@@ -175,6 +186,13 @@ button.search-button{
     border: 1px solid black; 
   }
 
+  #profile-body{
+    width: 699px !important;
+    height: 858px !important;
+    background-color: white;
+    border: 1px solid black;
+  }
+
   #display-area{
     width:647px !important;
     height:828px !important;
@@ -186,12 +204,62 @@ button.search-button{
     border-width: 0px 1px 0px 1px;
   }
 
+   #display-profile-area{
+    width: 647px !important;
+    height: 825px !important;
+    background-color: white;
+    margin-left: 25px;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+  }
+
   #main-job-area{
     background-color:white;
     width:617px !important;
     height:580px !important;
     margin-left:15px;
     border: 1px solid black;
+  }
+
+  #main-profile-area{
+    background-color:white;
+    width:617px !important;
+    height:810px !important;
+    margin-left:15px;
+    border: 1px solid black;
+  }
+
+  #home-button{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    float: left;
+    display: block;
+    border-color: #333;
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+
+  #job-part-title{
+    float: right;
+    margin-top: -37px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+   #bumble-part-title{
+     float: left;
+    margin-left: -17px;
+    font-weight: bold;
+    color: white;
+    -webkit-transform: rotate(10deg);
   }
 
   #job-description{

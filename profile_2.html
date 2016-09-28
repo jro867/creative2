@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Family List</title>
+
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <body>
+  
+        <div id="main-app-body" class="container">
+        <!-- Navegation-->
+        <div id="right-menu" class="navbar-wrapper col-lg-6">
+          <div class"container nav-bumble-container">
+
+            <nav id="nav" class="navbar navbar-inverse navbar-static-top job-bumble-menu">
+            <div class="container nav-bumble-container">
+            <!-- <div class="row"> -->
+              <div class="navbar-header col-lg-6">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <img id="user-pic" src="images/user.png"/>
+                <ul id="job-bumble-menu"class="nav navbar-nav navbar-right">
+                  <li><a href="/profile.html">My info <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#resumen-container">Settings</a></li>
+                </ul>
+              </div>
+            </div>
+	 </nav>
+          </div>
+        </div>
+        <!--message navegation -->
+        <div id="message-menu-holder" class="col-lg-6">
+          <button type="button" class="message-button" aria-expanded="false" aria-controls="navbar"></button>
+          <button type="button" class="search-button" aria-expanded="false" aria-controls="navbar"></button>          
+        </div><!--END OF MENU/NAVIGATION -->
+		<div id="user-profile">
+			<div>
+				<img id="user-photo" src="images/user.png"/>
+			</div>
+			<center><h2>Robert Cannon</h2></center>
+			<div id="user-info">
+				<div id="location">
+					<div id="location-pic">
+						<img src="images/location.png"/>
+					</div>
+					<h4 id="user-location">Location</h4>
+					<p>Provo, UT</p>
+				</div>
+
+				<div id="desc">
+					<div id="info-pic"> 
+						<img src="images/info.png"/>
+					</div>
+					<h4 id="user-description">Info</h4>
+					<p>Hands-on executive known for developing new ideas, strategic management of sales teams, quota attainment, and hiring, training and motivating a complex sales organization. Professional, creative, out-of-the-box thinking, and competitive. Offering 10+ years in B2B and B2C sales experience, creating and maintaining superior client relationships with a constant emphasis on ROI for all parties involved. Background in SAAS, higher ed, and business solutions (C-suite sales) industries, with extensive experience in sales management, consultative sales, business development and training. Eager to learn from others with a constant emphasis on improving leadership skills.</p>
+				</div>
+			</div>
+		</div>
+	</div><!--end of display info area -->         
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

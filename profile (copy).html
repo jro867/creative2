@@ -25,61 +25,43 @@
             <div class="container nav-bumble-container">
             <!-- <div class="row"> -->
               <div class="navbar-header col-lg-6">
-              <a href="index.html">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                </a>
               </div>
-         <!--      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+              <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                 <img  id="user-pic" src="images/user.png"/>
                 <ul id="job-bumble-menu"class="nav navbar-nav navbar-right">
-                  <li><a href="profile.html">My info <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">My info <span class="sr-only">(current)</span></a></li>
                   <li><a href="#">Settings</a></li>
                 </ul>
-              </div> -->
-             <!--  <div id="home-button">
-              </div> -->
-
+              </div>
             </div>
           </nav>
 
           </div>
         </div>
         <!--message navegation -->
-        <div id="message-menu-holder" class="col-lg-6">         
+        <div id="message-menu-holder" class="col-lg-6">     
         </div><!--END OF MENU/NAVEGATION -->
 
-        <!-- SEARCH CONTAINER, it expands at click, DEFAULT -->
-        <div id="search-container">
-          <div id="inner-search-container">
-            <div id="search-fields">
-              <h2>Search Jobs {{ stateSelected}}</h2>
-              <form ng-submit="searchCareers()">
-                <input type="text" ng-model="jobQuery" class="form-control" size="25" placeholder="Job Search"/>
-
-                <select ng-model="stateSelected" ng-options="x for (x, y) in states" ></select>
-                <br/>
-                <input id="submit-search" class="btn-primary" type="submit" value="Submit" />
-                <img id="bumble-search-image"src="images/bumble.png"/>
-
-              </form>
-            </div><!--end of search-fields-->
-          </div><!--end of inner-search--> 
-        </div><!--END of search--> 
+       
 
         <!-- Display info area -->
         <div id="profile-body">
           <div id="display-profile-area">
-            <div id="main-profile-area">
+            <div id="main-job-area">
+              <div id="main-info">
+             
+
+              </div>
 
             </div>
           </div>
-        </div><!--end of display info area -->         
-
+        </div><!--end of display info area -->   
       </div><!--END OF main-app-body-->   
     
     
